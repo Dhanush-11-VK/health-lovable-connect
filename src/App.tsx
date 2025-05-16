@@ -12,6 +12,9 @@ import Patients from "./pages/Patients";
 import Messages from "./pages/Messages";
 import Prescriptions from "./pages/Prescriptions";
 import NotFound from "./pages/NotFound";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import ForgotPassword from "./pages/ForgotPassword";
 import { useState } from "react";
 
 const App = () => {
@@ -31,6 +34,9 @@ const App = () => {
             <Route path="/patients" element={<Patients />} />
             <Route path="/messages" element={<Messages />} />
             <Route path="/prescriptions" element={<Prescriptions />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/forgot-password" element={<ForgotPassword />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
